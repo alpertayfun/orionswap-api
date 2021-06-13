@@ -1,10 +1,10 @@
 {
-  "name": "PancakeSwap Exchange LITE",
+  "name": "OrionSwap Trading Data",
   "schemaPath": "schema.graphql",
   "extensions": {
     "endpoints": {
       "PancakeSwap Exchange LITE": {
-        "url": "https://api.bscgraph.org/subgraphs/name/pancakeswap/exchange-lite",
+        "url": "https://api.thegraph.com/subgraphs/name/orionswap/trading-data",
         "headers": {
           "user-agent": "JS GraphQL"
         },
