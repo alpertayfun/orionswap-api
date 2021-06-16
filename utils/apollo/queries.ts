@@ -54,3 +54,33 @@ export const TOP_PAIRS = gql`
     }
   }
 `;
+
+export const GLOBAL_DATA = gql`
+  query factories($blockNumber: Int!, $factoryAddress: ID!) {
+    factories(block: { number: $blockNumber }, where: { id: $factoryAddress }) {
+      id
+      totalVolumeUSD
+      totalVolumeBNB
+      untrackedVolumeUSD
+      totalLiquidityUSD
+      totalLiquidityBNB
+      totalTransactions
+      totalPairs
+    }
+  }
+`;
+
+export const CURRENT_GLOBAL_DATA = gql`
+  query currentFactories($factoryAddress: ID!) {
+    factories(where: { id: $factoryAddress }) {
+      id
+      totalVolumeUSD
+      totalVolumeBNB
+      untrackedVolumeUSD
+      totalLiquidityUSD
+      totalLiquidityBNB
+      totalTransactions
+      totalPairs
+    }
+  }
+`;

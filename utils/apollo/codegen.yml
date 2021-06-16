@@ -1,5 +1,5 @@
 overwrite: true
-schema: './utils/apollo/schema.graphql'
+schema: 'https://api.thegraph.com/subgraphs/name/orionswap/trading-data'
 documents:
   - './utils/apollo/queries.ts'
 generates:
